@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:weightSum="1"
+    android:background="@drawable/blackboard"
+    android:orientation="vertical"
+    >
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"
+      android:paddingTop="15dp"
+      android:src="@drawable/science_icon"
+      android:id="@+id/image"
+      />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"
+      android:text="Current Affairs Quiz"
+      android:id="@+id/quiz_heading"
+      android:padding="15dp"
+      android:textColor="#fff"
+      android:textSize="35dp" />
+
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+   <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:weightSum="3"
+     android:layout_height="match_parent">
+
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+       <TextView
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:textSize="20dp"
+         android:layout_weight=".5"
+         android:text="Difficulty Level"/>
+       <Spinner
+         android:layout_width="0dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginRight="40dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         android:paddingRight="20dp"
+         android:paddingLeft="20dp"
+         android:paddingTop="10dp"
+         android:background="@drawable/edittext_box"
+         android:paddingBottom="10dp"
+         android:id="@+id/level_select"
+         android:layout_height="match_parent"
+         android:layout_weight=".5"
+         android:prompt="@string/spinner_title">
+
+       </Spinner>
+
+     </LinearLayout>
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+       <TextView
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:textSize="20dp"
+         android:layout_weight=".5"
+         android:text="No. of Questions"/>
+       <EditText
+         android:layout_width="0dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginRight="40dp"
+         android:inputType="number"
+         android:hint="10"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         android:paddingRight="20dp"
+         android:paddingLeft="20dp"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+         android:id="@+id/Q_no"
+         android:layout_height="match_parent"
+         android:background="@drawable/edittext_box"
+         android:layout_weight=".5"></EditText>
+
+     </LinearLayout>
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+       <TextView
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:textSize="20dp"
+         android:layout_weight=".5"
+         android:text="Timer"/>
+       <EditText
+         android:layout_width="0dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginRight="40dp"
+         android:layout_marginTop="5dp"
+         android:inputType="number"
+         android:hint="30"
+         android:layout_marginBottom="5dp"
+         android:paddingRight="20dp"
+         android:paddingLeft="20dp"
+         android:paddingTop="10dp"
+         android:id="@+id/time"
+         android:paddingBottom="10dp"
+         android:layout_height="match_parent"
+         android:background="@drawable/edittext_box"
+         android:layout_weight=".5"></EditText>
+
+     </LinearLayout>
+
+   </LinearLayout>
+
+
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="bottom"
+    android:weightSum="3"
+    android:orientation="horizontal">
+    <FrameLayout
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="match_parent">
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView6"
+        android:src="@drawable/start_button"
+        android:layout_gravity="right" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:rotation="-7"
+        android:textColor="#fff"
+        android:text="Start"
+        android:id="@+id/start_button"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal|top" />
+
+
+    </FrameLayout>
+  </LinearLayout>
+</LinearLayout>

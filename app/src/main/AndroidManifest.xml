@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.administrator.storyapp">
+
+  <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.NETWORK" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+  <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+  <permission
+    android:name="com.example.administrator.storyapp.permission.C2D_MESSAGE"
+    android:protectionLevel="signature" />
+  <uses-permission android:name="com.example.administrator.storyapp.permission.C2D_MESSAGE" />
+
+
+
+
+  <application
+    android:allowBackup="true"
+    android:icon="@drawable/logo_main2"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme.NoActionBar">
+    <meta-data
+      android:name="com.google.android.gms.version"
+      android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.facebook.sdk.ApplicationId"
+      android:value="@string/facebook_app_id"/>
+
+      <activity
+      android:name=".Home.HomeScreen"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar"
+      android:screenOrientation="portrait"
+      >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <!--
+           GCM Receiver
+       -->
+    <receiver
+      android:name="com.google.android.gms.gcm.GcmReceiver"
+      android:exported="true"
+      android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+        <category android:name="com.gnirt69.gcmexample"/>
+      </intent-filter>
+    </receiver>
+    <!--
+            GCM Receiver Service
+        -->
+    <service android:name=".GCM.GCMPushReceiverService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </service>
+    <!--
+         GCM Registration Intent Service
+     -->
+    <service android:name=".GCM.GCMRegistrationIntentService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.gms.iid.InstanceID"/>
+      </intent-filter>
+    </service>
+    <activity
+      android:name=".Quiz.Quiz_Home"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar"
+      android:screenOrientation="portrait"
+      >
+    </activity>
+    <activity
+        android:name=".Login.splash"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:screenOrientation="portrait"
+        >
+    </activity>
+
+
+    <activity
+      android:name=".Quiz.Quiz_Page"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar"
+      android:screenOrientation="portrait"
+      >
+
+    </activity>
+
+
+    <activity
+      android:name=".Quiz.Score_Board"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar"
+      android:screenOrientation="portrait"
+      >
+    </activity>
+
+    <activity android:name="com.facebook.FacebookActivity"
+      android:configChanges=
+        "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar"
+      android:label="@string/app_name" />
+
+    <activity
+
+      android:name=".Login.Description"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar" />
+
+    <!--     The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+    <provider android:authorities="com.facebook.app.FacebookContentProvider1707992566116490"
+      android:name="com.facebook.FacebookContentProvider"
+      android:exported="true" />
+
+    <activity
+      android:name=".MapsActivity"
+      android:label="@string/title_activity_maps"></activity>
+  </application>
+
+</manifest>

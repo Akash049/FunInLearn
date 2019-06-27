@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_back"
+    android:weightSum="6">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="20dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="25dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/ques_back"
+    android:textSize="20dp"
+    android:textColor="#fff"
+    android:text="Preview of the question appear here"
+    android:id="@+id/question"
+    android:layout_weight="1.5" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight="3.5">
+
+  <Button
+    android:layout_width="281dp"
+    android:layout_height="40dp"
+    android:text="Option 1"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:id="@+id/o1"
+    android:layout_margin="10dp"
+    android:background="@drawable/purple_button"
+    android:layout_gravity="center_horizontal" />
+  <Button
+    android:layout_width="281dp"
+    android:layout_height="40dp"
+    android:text="Option 2"
+    android:layout_margin="10dp"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:id="@+id/o2"
+    android:background="@drawable/purple_button"
+    android:layout_gravity="center_horizontal" />
+  <Button
+    android:layout_width="281dp"
+    android:layout_height="40dp"
+    android:text="Option 3"
+    android:layout_margin="10dp"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:id="@+id/o3"
+    android:background="@drawable/purple_button"
+    android:layout_gravity="center_horizontal" />
+  <Button
+    android:layout_width="281dp"
+    android:layout_height="40dp"
+    android:text="Option 4"
+    android:id="@+id/o4"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/purple_button"
+    android:layout_gravity="center_horizontal" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Timer"
+      android:padding="8dp"
+      android:textSize="15dp"
+      android:id="@+id/timer"
+      android:textColor="#000"
+      android:background="@drawable/edittext_box"
+      android:layout_gravity="center_horizontal" />
+
+  </LinearLayout>
+
+
+
+  <LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="0dp"
+  android:layout_weight="1"
+  android:weightSum="1"
+  android:orientation="horizontal"
+  >
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="73dp"
+    android:gravity="left"
+    android:layout_weight=".2">
+    <ImageButton
+      android:layout_width="50dp"
+      android:layout_height="match_parent"
+      android:src="@drawable/prev_icon"
+      android:layout_marginLeft="4dp"
+      android:id="@+id/prev_button"
+      android:layout_weight="1.27" />
+  </LinearLayout>
+  <TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight=".6"
+    android:background="@drawable/ques_back"
+    android:layout_margin="4dp"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textSize="30dp"
+    android:id="@+id/total"
+    android:text="Total : "/>
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="73dp"
+    android:gravity="right"
+    android:layout_weight=".2"
+    android:weightSum="1">
+    <ImageButton
+      android:layout_width="50dp"
+      android:layout_height="match_parent"
+      android:layout_marginRight="10dp"
+      android:src="@drawable/next_icon"
+      android:id="@+id/next_button"
+      android:layout_weight="1.27" />
+  </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+

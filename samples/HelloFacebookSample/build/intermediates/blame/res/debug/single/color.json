@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\FunInLearn\\samples\\HelloFacebookSample\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\FunInLearn\\samples\\HelloFacebookSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook\\4.12.1\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\FunInLearn\\samples\\HelloFacebookSample\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\FunInLearn\\samples\\HelloFacebookSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook\\4.12.1\\res\\color\\com_facebook_send_button_text_color.xml"
+    }
+]

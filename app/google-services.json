@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "156395703286",
+    "project_id": "funinlearn-6d965"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156395703286:android:6363e06b12e96405",
+        "android_client_info": {
+          "package_name": "com.example.administrator.storyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64XbZoWm4Bl8IoztN1gtgW1Ik_KhQRQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

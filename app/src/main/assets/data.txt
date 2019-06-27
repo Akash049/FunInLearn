@@ -1,0 +1,5 @@
+Which Operator to be used to find if the object nelongs to the given class?
+A). instanceOf
+B). (.)dot operator
+C). CallValue
+D). IfChild

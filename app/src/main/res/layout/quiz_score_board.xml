@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/score_board"
+   android:gravity="center"
+    android:layout_height="match_parent"
+  android:weightSum="1">
+  <LinearLayout
+    android:layout_width="204dp"
+    android:layout_height="185dp"
+    android:orientation="vertical"
+    android:layout_weight="0.13">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      android:weightSum="1">
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total Questions"
+        android:textSize="20dp"
+        android:layout_weight=".7"/>
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/no_of_ques"
+        android:layout_weight=".3"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      android:weightSum="1">
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Attempted"
+        android:textSize="20dp"
+        android:layout_weight=".7"/>
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="20dp"
+        android:id="@+id/no_of_ques_attempted"
+        android:gravity="center"
+        android:layout_weight=".3"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      android:weightSum="1">
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:textSize="20dp"
+        android:layout_weight=".7"/>
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:gravity="center"
+        android:id="@+id/no_of_ques_correct"
+        android:textSize="20dp"
+        android:layout_weight=".3"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      android:weightSum="1">
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Wrong"
+        android:textSize="20dp"
+        android:layout_weight=".7"/>
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:id="@+id/no_of_ques_wrong"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_weight=".3"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      android:weightSum="1">
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="% Accuracy"
+        android:textSize="20dp"
+        android:layout_weight=".7"/>
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="20dp"
+        android:id="@+id/Accuracy"
+        android:gravity="center"
+        android:layout_weight=".3"/>
+    </LinearLayout>
+
+
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
